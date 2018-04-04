@@ -8,6 +8,8 @@ function test(obj){
 		obj.onmousemove = function(ev){
 			obj.style.left = ev.pageX - disX
 			obj.style.top = ev.pageY - disY
+			console.log(111)
+			console.log(222)
 		}
 	}
 }	
