@@ -5,5 +5,9 @@ function test(obj){
 	obj.onmousedown = function(ev){
 		disX = ev.pageX - obj.offsetLeft;
 		disY = ev.pageY - obj.offsetTop;
+		obj.onmousemove = function(ev){
+			obj.style.left = ev.pageX - disX
+			obj.style.top = ev.pageY - disY
+		}
 	}
 }	
